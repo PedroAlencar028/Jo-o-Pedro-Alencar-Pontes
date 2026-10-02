@@ -28,3 +28,7 @@ npm run preview
 ## Publicação
 
 O projeto já está configurado para deploy via GitHub Pages com workflow automatizado.
+
+## Referência do repositório
+
+Jo-o-Pedro-Alencar-Pontes — TDE-2 Figma turbo.
