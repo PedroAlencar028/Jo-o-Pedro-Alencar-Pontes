@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-const asset = (name: string) => `/assets/${name}`
+const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`
 const intro =
   "Conectividade inteligente, eficiência elétrica e uma experiência de direção que combina desempenho premium com conforto urbano."
 const description =
