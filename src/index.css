@@ -1,0 +1,57 @@
+@import './styles/fonts.css';
+@import 'tailwindcss';
+
+:root {
+  color: #171717;
+  background-color: #f5f3f1;
+  --vinci-red: #e51837;
+  --vinci-dark: #141414;
+  --vinci-muted: #666666;
+  --vinci-soft: #f3f1ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: 'Genos:Regular', sans-serif;
+    background: #f5f3f1;
+    color: var(--vinci-dark);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  button,
+  summary {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  :focus-visible {
+    outline: 2px solid #e51837;
+    outline-offset: 5px;
+  }
+}
+
+@layer components {
+  .body-font {
+    font-family: 'Host Grotesk:Regular', sans-serif;
+  }
+
+  .light-font {
+    font-family: 'Genos:Light', sans-serif;
+    font-weight: 300;
+  }
+
+  .action {
+    @apply flex h-13 w-68.25 max-w-full items-center justify-center rounded-sm text-xl transition-colors;
+    font-family: 'Genos:Medium', sans-serif;
+    font-weight: 500;
+  }
+}
+
